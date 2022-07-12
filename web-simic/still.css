@@ -1,0 +1,316 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+    height: 80px;
+    width:100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position:sticky;
+    top:0;
+    z-index:999 ;
+    background: white;
+
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+#navbar__logo{
+    display:flex;
+    align-items: center;
+    align-content: left;
+    cursor: pointer;
+    
+    
+    
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    
+}
+.navbar__item{
+    height: 80px;
+}
+.navbar__links
+{
+    color:black;
+    display: flex;
+    font-size:1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+}
+.navbar__links.active
+{
+    text-decoration: underline;
+}
+
+.navbar__links:hover
+{   
+    
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+
+
+/*main*/
+.btn {
+    position: fixed;
+    bottom: 100px;
+    right:100px;
+    align-content: right;
+	background-color:#000000;
+	border-radius:42px;
+	border:3px solid #080808;
+	display:flexbox;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:28px 0px;
+	text-decoration:none;
+    transition:all 0.2s ease-in;
+}
+.btn:hover {
+    transition:all 0.25s ease-in;
+    background-color: #434343;
+    border: none;
+	transform:scale(150%);
+}
+.btn:active {
+	position:sticky;
+	top:1px;
+}
+
+#jedan{
+    display: flex;
+}
+
+#jedan .cilj {
+    width: 50%;
+    margin: 200px 50px 100px 70px;
+    
+    
+}
+#jedan .aktivnost {
+    width: 50%;
+    margin: 200px 70px 100px 50px;
+}
+#jedan .cilj h1{
+    width: 120px;
+    color: white;
+    background: black;
+    margin-bottom: 20px;
+    
+}
+#jedan .aktivnost h1{
+    width: 295px;
+    color: white;
+    background: black;
+    margin-bottom: 20px;
+    
+}
+
+#footer-wrapper{
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+	margin: 0 0%;
+	overflow: auto;
+}
+
+
+section#dva {
+	padding-bottom: 50px;
+	text-align: center;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h2 {
+	margin: 50px 0;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+.flexbox {
+	padding: 150px 50px;
+	width: 400px;
+    
+}
+
+.flexbox h3, .kolone h3 {
+	margin: 15px 0;
+	text-transform: uppercase;
+	
+}
+
+
+.flexbox p {
+	line-height: 1.8em;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 960px) {
+    
+    .btn {
+        position: fixed;
+        bottom: 100px;
+        right:30px;
+        align-content: right;
+        background-color:#000000;
+        border-radius:42px;
+        border:3px solid #080808;
+        display:flexbox;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:28px 0px;
+        text-decoration:none;
+    }
+    .btn:hover {
+        padding: 28px 56px;
+    }
+    .btn:active {
+        position:sticky;
+        top:1px;
+    }
+    .navbar_container{
+
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+        
+    }
+
+    .navbar__menu{
+        background: white;
+        display: grid;
+        grid-template-columns: auto;
+        margin:0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height:70vh;
+        z-index: -1;
+        
+        
+        
+    }
+    .navbar__menu.active {
+        top:100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 70vh;
+        
+
+    }
+
+    #navbar__logo{
+        height:80px;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        display: flex;
+
+    }
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;    
+        transition: all 0.3s ease-in-out;
+        background: black;
+        
+    }
+    .navbar__item{
+        width: 100%;
+    }
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display:table;
+    }
+    #mobile-menu{
+        position: absolute;
+        top:20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+
+    }
+    .navbar__toggle .bar{
+        display: block;
+        cursor:pointer;
+        
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #jedan
+    {
+        flex-direction: column;
+
+    }
+
+    #jedan .cilj {
+        width: 50%;
+        margin: 50px auto;
+        
+        
+    }
+    #jedan .aktivnost {
+        width: 50%;
+        margin: 50px auto;
+    }
+    
+    #footer-wrapper{
+        border-top: 1px solid black;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px 0;
+        margin: 0 0%;
+        overflow: auto;
+    }
+
+}

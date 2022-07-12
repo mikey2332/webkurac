@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="still.css">
+    <link rel="stylesheet" type="text/css" href="stil3.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="" id="navbar__logo">
+                <img src="liceulice_logo.png" width="200" height="150">
+            </a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar" id=""></span>
+                    <span class="bar" id=""></span>
+                    <span class="bar" id=""></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links active">
+                            Početna
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="onama.html" class="navbar__links" >
+                            O nama
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="vesti.html" class="navbar__links">
+                            Vesti
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="kontakt.html" class="navbar__links">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="donacije.html" class="navbar__links">
+                            Donacije
+                        </a>
+                    </li>
+                </ul>
+            </a>
+        </div>
+    </nav>
+    <section class="rezervacija">
+        <article id="pop_up">
+            <h2>DONIRANJE</h2>
+            <form onsubmit='formSubmit(e)'>
+                <label for="name">Ime i prezime</label>
+                <input type="text" name="Name" id="name" >
+                <label for="phone">Broj telefona</label>
+                <input type="tel" name="telefon" id="phone" >
+                <label for="name">Suma za uplatu</label>
+                <input type="text" name="Name" id="name" >
+                <label for="racun">Broj racuna</label>
+                <input type="text" name="racun" id="racun" >
+                <label for="cvv">CVV</label>
+                <input type="text" name="CVV" id="cvv" >
+                <label for="date">Datum isteka</label>
+				<input type="date" name="date" id="date" >
+                <label for="email">E-mail</label>
+                <input type="email" name="Email" id="email" >
+                
+                <label for="destinacija">Odakle ste?</label>
+                <select id="destinacija" name="izmena_destinacije" >
+                    <option value="">Srbija</option>
+                    <option value="Viking">Inostranstvo</option>
+                    
+                </select>
+                <button onclick="formSubmit()">Doniraj</button>
+            </form>
+            <p>*Za sve ostale informacije kontaktirajte nas <a href="kontakt.html">ovde.</a></p>
+<div id="customAlert">aaa</div>
+            
+        </article>
+    </section>
+    <div id="footer-wrapper">
+		<footer>
+			<p>Kupujući LICEULICE pomažete mnogima, čitajući LICEULICE pomažete sebi.</p>
+		</footer>
+	</div>
+    <script  src="custom_popup.js"></script>
+</body>
+</html>

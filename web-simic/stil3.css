@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+#pop_up {
+    background-color: whitesmoke;
+    width: 77%;
+    margin: 0 auto;
+}
+
+#pop_up h2, .form h2, .O-nama h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-top: 20%;
+    text-align: center;
+    margin: 0 4% 5% 4%;
+    color: black;
+}
+
+form {
+	margin-bottom: 20px;
+	text-align: center;
+    color: black;
+}
+
+input, select, textarea {
+	display: block;
+	background-color: #f8f8f8;
+	border-color: black;
+	border-radius: 5px;
+	border-width: 1.5px;
+	padding: 8px;
+	width: 60%;
+	text-align: center;
+	margin: 8px auto 25px auto;
+}
+
+input[type="submit"]{
+	width: 30%;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+    margin-top: 8%;
+	border: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+	width: 60%;
+	cursor: pointer;
+}
+
+
